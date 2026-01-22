@@ -1,5 +1,5 @@
 name: "网易云音乐API增强版"
-description: "全网最全的网易云音乐API接口"
+description: "全网最全的网易云音乐API接口，支持几乎所有网易云音乐功能"
 version: "4.29.20"
 slug: "netease-cloud-music-api-enhanced"
 init: false
@@ -25,3 +25,8 @@ options:
 schema:
   port: port
   log_level: list("trace", "debug", "info", "warning", "error", "fatal")
+documentation: https://github.com/Vincent1994Go/addons/blob/main/netease-cloud-music-api-enhanced/README.md
+logo: https://raw.githubusercontent.com/Vincent1994Go/addons/main/netease-cloud-music-api-enhanced/logo.png
+icon: mdi:music
+url: https://github.com/Vincent1994Go/addons
+maintainer: Vincent1994Go <your-email@example.com>

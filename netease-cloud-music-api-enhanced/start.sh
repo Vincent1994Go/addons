@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# 确保脚本可执行
-chmod +x /app/run.sh
+# 设置严格模式
+set -e
+
+# 输出初始化日志
+echo "[INFO] 初始化网易云音乐API增强版服务..."
 
 # 启动服务
-/app/run.sh
+exec /app/run.sh

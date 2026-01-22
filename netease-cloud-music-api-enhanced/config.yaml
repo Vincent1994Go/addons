@@ -26,7 +26,7 @@ schema:
   port: port
   log_level: list("trace", "debug", "info", "warning", "error", "fatal")
 documentation: https://github.com/Vincent1994Go/addons/blob/main/netease-cloud-music-api-enhanced/README.md
-logo: https://raw.githubusercontent.com/Vincent1994Go/addons/main/netease-cloud-music-api-enhanced/logo.png
+# logo: https://raw.githubusercontent.com/Vincent1994Go/addons/main/netease-cloud-music-api-enhanced/logo.png
 icon: mdi:music
 url: https://github.com/Vincent1994Go/addons
 maintainer: Vincent1994Go <your-email@example.com>

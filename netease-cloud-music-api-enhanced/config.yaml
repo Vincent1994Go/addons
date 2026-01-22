@@ -15,7 +15,7 @@ host_network: false
 privileged:
   - NET_ADMIN
 environment:
-  - TZ=Asia/Shanghai
+  TZ: Asia/Shanghai
 map:
   - config:rw
   - ssl:ro

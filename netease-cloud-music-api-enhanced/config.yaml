@@ -19,6 +19,8 @@ environment:
 map:
   - config:rw
   - ssl:ro
+ports:
+  "3002:3002/tcp": null
 options:
   port: 3002
   log_level: "info"

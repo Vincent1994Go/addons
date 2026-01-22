@@ -7,10 +7,10 @@ RUN addgroup -g 1001 -S appgroup && \
 # 设置工作目录
 WORKDIR /app
 
-# 复制package.json
-COPY package.json ./
+# 复制package.json和package-lock.json
+COPY package.json package-lock.json ./
 
-# 安装依赖
+# 安装依赖，使用npm而不是pnpm，避免husky问题
 RUN npm install --production --ignore-scripts
 
 # 复制项目文件

@@ -7,11 +7,11 @@ RUN addgroup -g 1001 -S appgroup && \
 # 设置工作目录
 WORKDIR /app
 
-# 复制package.json和pnpm-lock.yaml
-COPY package.json pnpm-lock.yaml ./
+# 复制package.json
+COPY package.json ./
 
 # 安装依赖
-RUN npm install -g pnpm && pnpm install --prod
+RUN npm install --production
 
 # 复制项目文件
 COPY . .

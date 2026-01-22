@@ -1,5 +1,8 @@
 FROM node:18-alpine
 
+# 强制重新构建的时间戳 - 2026-01-22
+RUN echo "Forcing rebuild - 2026-01-22"
+
 # 创建非root用户
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup

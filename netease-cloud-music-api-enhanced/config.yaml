@@ -1,0 +1,27 @@
+name: "网易云音乐API增强版"
+description: "全网最全的网易云音乐API接口"
+version: "4.29.20"
+slug: "netease-cloud-music-api-enhanced"
+init: false
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - aarch64
+startup: services
+boot: auto
+devicetree: false
+host_network: false
+privileged:
+  - NET_ADMIN
+environment:
+  - TZ=Asia/Shanghai
+map:
+  - config:rw
+  - ssl:ro
+options:
+  port: 3000
+  log_level: "info"
+schema:
+  port: port
+  log_level: list("trace", "debug", "info", "warning", "error", "fatal")

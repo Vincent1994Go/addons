@@ -23,11 +23,11 @@ COPY . .
 RUN chown -R appuser:appgroup /app
 
 # 暴露端口
-EXPOSE 3000
+EXPOSE 3002
 
 # 健康检查
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD wget --no-verbose --tries=1 --spider http://localhost:3000 || exit 1
+    CMD wget --no-verbose --tries=1 --spider http://localhost:3002 || exit 1
 
 # 切换到非root用户
 USER appuser

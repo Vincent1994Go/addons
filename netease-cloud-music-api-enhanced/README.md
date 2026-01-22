@@ -31,7 +31,7 @@
 
 | 选项 | 类型 | 默认值 | 描述 |
 |------|------|--------|------|
-| `port` | 端口 | 3000 | API服务监听的端口 |
+| `port` | 端口 | 3002 | API服务监听的端口 |
 | `log_level` | 字符串 | info | 日志级别：trace, debug, info, warning, error, fatal |
 
 ### 启动服务
